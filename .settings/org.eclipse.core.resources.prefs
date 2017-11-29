@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//Common/const.py=UTF-8
+encoding//Common/util.py=UTF-8
+encoding//MonkeyTest/MonkeyTestProcess.py=utf-8
+encoding//MonkeyTest/monkey.py=utf-8
+encoding//MonkeyTest/utils.py=utf-8
+encoding//Report/base.py=UTF-8
+encoding//Report/generateReport.py=UTF-8
+encoding//Report/reportWritor.py=UTF-8
+encoding//ResMonitor/MemoryCPUMonitor.py=UTF-8
+encoding//ResMonitor/NetworkTraffic.py=UTF-8
+encoding//ResMonitor/PowerMonitor.py=UTF-8
+encoding//StartTime/StartTime.py=UTF-8
+encoding/MainWindow.py=UTF-8
+encoding/test.py=cp936
