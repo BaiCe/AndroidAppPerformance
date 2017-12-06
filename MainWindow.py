@@ -22,7 +22,6 @@ class mainWindow(object):
         self.cpuMonitor = None
         self.networkMonitor = None
         self.powerMonitor = None
-        
         self.monkeyCheckVar = IntVar()
         self.startTimeCheckVar = IntVar()
         self.cpuCheckVar = IntVar()
@@ -166,9 +165,11 @@ class mainWindow(object):
         #获取包名
         util.getPackage()
         if UserConf.packageName=="":
-            tkMessageBox.showwarning("警示", "包名获取失败，请将apk文件放到工程目录下，文件以.apk结尾")
+            tkMessageBox.showwarning("警示", "包名获取失败，请将apk文件放到工程目录下的apk目录下，文件以.apk结尾")
+            return
         if UserConf.activityName=="":
-            tkMessageBox.showwarning("警示","ActivityName获取失败，请将apk文件放到工程目录下，文件以.apk结尾")
+            tkMessageBox.showwarning("警示","ActivityName获取失败，请将apk文件放到工程目录下的apk目录下，文件以.apk结尾")
+            return
         print "PackageName: "+UserConf.packageName
         print "ActivityName: "+UserConf.activityName
         #资源勾选检测

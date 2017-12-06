@@ -30,11 +30,15 @@ def getPackage():
     "获取apk的包名和Activity的名字"
     apkFile = ""
     apkPath = os.path.join(const.workSpace, "apk")
+    commonPath = os.path.join(const.workSpace, "Common")
+    aapthPath = os.path.join(commonPath, "aapt")
     for filename in os.listdir(apkPath):
         if filename.endswith(".apk"):
             apkFile = os.path.join(apkPath,filename)
             break
-    result = os.popen("aapt dump badging "+apkFile).read()
+    commonStr = aapthPath+" dump badging "+apkFile
+    print commonStr
+    result = os.popen(commonStr).read()
     lines = result.split("\n")
     
     for line in lines:
